@@ -2,6 +2,7 @@ import Header from "./Header";
 import Foods from "./Foods";
 import Drinks from "./Drinks";
 import Desserts from "./Desserts";
+import CheckOrder from "./CheckOrder";
 import CloseOrder from "./CloseOrder";
 
 const App = () => {
@@ -10,12 +11,13 @@ const App = () => {
 			<Header />
 
 			<main>
-				<Foods />
+				{/* <Foods />
 				<Drinks />
-				<Desserts />
+				<Desserts /> */}
+				<CheckOrder />
 			</main>
 
-			<CloseOrder />
+			{/* <CloseOrder /> */}
 		</>
 	);
 }
