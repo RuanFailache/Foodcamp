@@ -2,9 +2,9 @@ import ProductList from "./ProductList";
 
 const Desserts = () => {
   const desserts = [
-    { name: "Pudim", image: "./img/pudim.jpg", description: "Apenas pudim", price: "R$ 14,90" },
-    { name: "Pudim", image: "./img/pudim.jpg", description: "Apenas pudim", price: "R$ 14,90" },
-    { name: "Pudim", image: "./img/pudim.jpg", description: "Apenas pudim", price: "R$ 14,90" },
+    { name: "Pudim", image: "./img/pudim.jpg", description: "Apenas pudim", price: "R$ 7,90" },
+    { name: "Pudim", image: "./img/pudim.jpg", description: "Apenas pudim", price: "R$ 7,90" },
+    { name: "Pudim", image: "./img/pudim.jpg", description: "Apenas pudim", price: "R$ 7,90" },
   ];
 
   return (
