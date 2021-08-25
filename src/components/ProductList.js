@@ -1,10 +1,18 @@
 const ProductList = (props) => {
+
+  const {
+    image,
+    description,
+    name,
+    price
+  } = props.data;
+
   return (
-    <li>
-      <img src={props.data.image} alt={props.data.description} />
-      <strong>{props.data.name}</strong>
-      <p>{props.data.description}</p>
-      <strong>{props.data.price}</strong>
+    <li className="product">
+      <img src={image} alt={description} />
+      <strong>{name}</strong>
+      <p>{description}</p>
+      <strong>{price}</strong>
     </li>
   );
 }

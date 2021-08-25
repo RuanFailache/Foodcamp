@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header>
+    <header className="top-bar fixed">
       <h1>FoodCamp</h1>
       <strong>Sua comida em 6 minutos</strong>
     </header>

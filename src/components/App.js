@@ -8,10 +8,14 @@ const App = () => {
 	return (
 		<>
 			<Header />
-			<Foods />	
-			<Drinks />
-			<Desserts />
-			<CloseOrder />			
+
+			<main>
+				<Foods />
+				<Drinks />
+				<Desserts />
+			</main>
+
+			<CloseOrder />
 		</>
 	);
 }

@@ -1,7 +1,9 @@
 const CloseOrder = () => {
   return (
-    <footer>
-      <button>Selecione os 3 itens para fechar o pedido</button>
+    <footer className="bottom-bar fixed">
+      <button>
+        <span>Selecione os 3 itens para fechar o pedido</span>
+      </button>
     </footer>
   );
 }
