@@ -66,6 +66,7 @@ main {
 .products .product {
   display: block;
   background-color: white;
+  width: 172px;
   padding: 15px;
   border-radius: 9px;
   box-shadow: 0 0 10px -4px rgba(0, 0, 0, .25);
@@ -74,7 +75,7 @@ main {
 .products .product img {
   display: inherit;
   object-fit: cover;
-  width: 172px;
+  width: 142px;
 }
 
 .products .product strong,
