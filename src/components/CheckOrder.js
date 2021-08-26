@@ -13,12 +13,12 @@ const CheckOrder = () => {
       </header>
 
       <ul>
-        {orders.map((order) => {
-          return <ProductInfo data={order} />;
+        {orders.map((order, key) => {
+          return <ProductInfo data={order} key={key} />;
         })}
         <li className="flex" >
           <strong>Total</strong>
-          <strong>{sumPriceOfOrders(orders).toFixed(2)}</strong>
+          <strong>{sumPriceOfOrders(orders).toFixed(2).replace(".", ",")}</strong>
         </li>
       </ul>
 
@@ -46,7 +46,7 @@ const ProductInfo = (props) => {
   return (
     <li className="flex" >
       <p>{name}</p>
-      <p>{price.toFixed(2)}</p>
+      <p>{price.toFixed(2).replace(".", ",")}</p>
     </li>
   );
 }

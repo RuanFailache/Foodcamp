@@ -1,23 +1,29 @@
 import Header from "./Header";
-import Foods from "./Foods";
-import Drinks from "./Drinks";
-import Desserts from "./Desserts";
-import CheckOrder from "./CheckOrder";
+import Products from "./Products";
+// import CheckOrder from "./CheckOrder";
 import CloseOrder from "./CloseOrder";
 
 const App = () => {
+
+	const products = [
+		{ type: "food", title: "Primeiro, seu prato" },
+		{ type: "drink", title: "Agora, sua bebida" },
+		{ type: "dessert", title: "Por fim, sua sobremesa" },
+	]
+
 	return (
 		<>
 			<Header />
 
 			<main>
-				{/* <Foods />
-				<Drinks />
-				<Desserts /> */}
-				<CheckOrder />
+				{products.map((product, key) => {
+					return <Products key={key} type={product.type} title={product.title} />
+				})}
 			</main>
 
-			{/* <CloseOrder /> */}
+			{/* <CheckOrder /> */}
+
+			<CloseOrder />
 		</>
 	);
 }
