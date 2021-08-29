@@ -37,7 +37,7 @@ const CloseOrder = ({ activeProducts }) => {
 
   const sendMessage = () => {
     if (!checkCondition()) return;
-    console.log(messageMaker());
+    window.open("https://wa.me/5591991535878?text=" + encodeURIComponent(messageMaker()));
   }
 
   return (
