@@ -1,3 +1,5 @@
+import "./CheckOrder.css"
+
 const CheckOrder = () => {
 
   const orders = [
